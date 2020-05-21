@@ -1,0 +1,27 @@
+<form id="newBurger">
+    <input id="newBurgerName" type="text" placeholder="Enter the name of a burger you want to try.">
+    <button type="submit">Add To List</button>
+</form>
+
+<ul>
+    {{#each burgers}}
+    {{#unless devoured}}
+        <li class="nonDevoured">
+            <span>{{this.burger_name}}</span>
+            <button type="button" class="devourBurger" data-id="{{this.id}}" data-newDevoured="{{devour}}">Burger</button>
+        </li>
+    {{/unless}}
+    {{/each}}
+</ul>
+
+<ul>
+    {{#each burgers}}
+    {{#if devoured}}
+        <li class="devoured">
+            <span>{{this.burger_name}}</span>
+            <button type="button" class="removeBurger" data-id="{{this.id}}" data-newDevoured="{{devour}}">Remove</button>
+        </li>
+    {{/if}}
+    {{/each}}
+</ul>
+
