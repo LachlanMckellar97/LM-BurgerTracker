@@ -1,8 +1,16 @@
 body {
-    background-color: antiquewhite;
+    background-color: rgb(248, 244, 239);
     width: 800px;
+    padding: 10px;
+    margin: auto;
 }
 #title {
-    border: solid 3px tan;
+    background-color: rgb(193, 209, 196);
+    border: solid 3px rgb(130, 150, 131);
     text-align: center;
+    color: rgb(88, 78, 65);
+}
+
+#newBurger {
+    
 }
