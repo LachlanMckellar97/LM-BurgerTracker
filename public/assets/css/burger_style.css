@@ -1,0 +1,8 @@
+body {
+    background-color: antiquewhite;
+    width: 800px;
+}
+#title {
+    border: solid 3px tan;
+    text-align: center;
+}

@@ -1,9 +1,13 @@
+<h2 id="title">My Burger List!</h2>
+
 <form id="newBurger">
     <input id="newBurgerName" type="text" placeholder="Enter the name of a burger you want to try.">
     <button type="submit">Add To List</button>
 </form>
 
-<ul>
+<p id="toEat">Burgers I want to eat</p>
+
+<ul id="toEatList">
     {{#each burgers}}
     {{#unless devoured}}
         <li class="nonDevoured">
@@ -14,7 +18,9 @@
     {{/each}}
 </ul>
 
-<ul>
+<p id="eaten">Burgers I have eaten</p>
+
+<ul id="eatenList"> 
     {{#each burgers}}
     {{#if devoured}}
         <li class="devoured">
@@ -25,3 +31,4 @@
     {{/each}}
 </ul>
 
+<footer id="footer">Burgers are good, go eat one!</footer>
